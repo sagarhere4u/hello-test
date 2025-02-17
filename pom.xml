@@ -7,6 +7,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>hello Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -28,9 +32,6 @@
                                 <groupId>com.lazerycode.jmeter</groupId>
                                 <artifactId>jmeter-maven-plugin</artifactId>
                                 <version>1.4.1</version>
-                                <configuration>
-                                        <testResultsTimestamp>false</testResultsTimestamp>
-                                </configuration>
                                 <executions>
                                         <execution>
                                                 <id>jmeter-tests</id>
